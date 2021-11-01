@@ -98,7 +98,7 @@
 							"raw": "{\n\t\"title\": \"Atomic Habits\",\n\t\"read\": true\n}"
 						},
 						"url": {
-							"raw": "https://{{apiId}}.execute-api.{{region}}.amazonaws.com/dev/books/0123456789",
+							"raw": "https://{{apiId}}.execute-api.{{region}}.amazonaws.com/dev/books/15a3878f-4bc2-49ec-a7d2-aa85be27e292",
 							"protocol": "https",
 							"host": [
 								"{{apiId}}",
@@ -110,7 +110,7 @@
 							"path": [
 								"dev",
 								"books",
-								"0123456789"
+								"15a3878f-4bc2-49ec-a7d2-aa85be27e292"
 							]
 						}
 					},
@@ -138,7 +138,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://{{apiId}}.execute-api.{{region}}.amazonaws.com/dev/books/0123456789",
+							"raw": "https://{{apiId}}.execute-api.{{region}}.amazonaws.com/dev/books/2f17e5e6-c424-43b3-a034-bf5f322751cd",
 							"protocol": "https",
 							"host": [
 								"{{apiId}}",
@@ -150,7 +150,7 @@
 							"path": [
 								"dev",
 								"books",
-								"0123456789"
+								"2f17e5e6-c424-43b3-a034-bf5f322751cd"
 							]
 						}
 					},
