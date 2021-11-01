@@ -48,8 +48,6 @@ functions:
 
   Auth:
     handler: src/lambda/auth/auth0Authorizer.handler
-#  RS256Auth:
-#    handler: src/lambda/auth/rs256Auth0Authorizer.handler
 
   GetBooks:
     handler: src/lambda/http/getBooks.handler
@@ -95,7 +93,7 @@ functions:
       - http:
           method: patch
           path: books/{bookId}
-#          authorizer: Auth
+          authorizer: Auth
           cors: true
           reqValidatorName: RequestBodyValidator
           documentation:
@@ -116,7 +114,7 @@ functions:
       - http:
           method: delete
           path: books/{bookId}
-#          authorizer: Auth
+          authorizer: Auth
           cors: true
     iamRoleStatements:
       - Effect: Allow
