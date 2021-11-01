@@ -122,6 +122,10 @@ functions:
           - dynamodb:GetItem
           - dynamodb:DeleteItem
         Resource: arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.BOOKS_TABLE}
+      - Effect: Allow
+        Action:
+          - s3:DeleteObject
+        Resource: arn:aws:s3:::${self:provider.environment.BOOK_IMAGES_S3_BUCKET}/*
 
   GenerateUploadUrl:
     handler: src/lambda/http/generateUploadUrl.handler

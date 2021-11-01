@@ -64,6 +64,11 @@ export class BooksCloudManager {
         bookId: bookId
       }
     }).promise()
+
+    await this.s3.deleteObject({
+      Bucket: this.attachmentsBucket,
+      Key: bookId
+    }).promise()
   }
 
   async findBook(bookId: string, userId: string): Promise<Book> | undefined {

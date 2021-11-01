@@ -21,7 +21,7 @@ things to implement:
 [X] enable distributed tracing
 [X] add logs
 [ ] metrics
-[ ] when deleting a book, delete the S3 object attached to it too
+[X] when deleting a book, delete the S3 object attached to it too
 [X] enable auth for all the requests
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
