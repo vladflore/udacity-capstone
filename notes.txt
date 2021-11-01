@@ -1,17 +1,13 @@
 npm install
-
 sls --version
-Framework Core: 2.25.2
-Plugin: 4.4.3
-SDK: 2.3.2
-Components: 3.7.0
-
 sls package
 sls deploy -v
 sls remove
 sls deploy function -f GetBooks
 
-the signed url request is a PUT operation
+aws sts get-caller-identity
+
+export NODE_OPTIONS="--max-old-space-size=8192"
 
 things to implement:
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -29,6 +25,13 @@ things to implement:
 
 https://manage.auth0.com/dashboard/us/dev-t30egl7m/applications
 
-export NODE_OPTIONS="--max-old-space-size=8192"
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-https://d7rpw3f31m.execute-api.eu-central-1.amazonaws.com/dev
+endpoints:
+  GET - https://ljbxg1td6b.execute-api.eu-central-1.amazonaws.com/dev/books
+  POST - https://ljbxg1td6b.execute-api.eu-central-1.amazonaws.com/dev/books
+  PATCH - https://ljbxg1td6b.execute-api.eu-central-1.amazonaws.com/dev/books/{bookId}
+  DELETE - https://ljbxg1td6b.execute-api.eu-central-1.amazonaws.com/dev/books/{bookId}
+  POST - https://ljbxg1td6b.execute-api.eu-central-1.amazonaws.com/dev/books/{bookId}/attachment
+
+JSON Web Key Set: https://dev-t30egl7m.us.auth0.com/.well-known/jwks.json
