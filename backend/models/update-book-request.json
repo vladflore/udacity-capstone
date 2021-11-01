@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "update book",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "read": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "title",
+    "read"
+  ],
+  "additionalProperties": false
+}
