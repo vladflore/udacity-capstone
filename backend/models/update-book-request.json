@@ -6,13 +6,13 @@
     "title": {
       "type": "string"
     },
-    "read": {
+    "isRead": {
       "type": "boolean"
     }
   },
   "required": [
     "title",
-    "read"
+    "isRead"
   ],
   "additionalProperties": false
 }

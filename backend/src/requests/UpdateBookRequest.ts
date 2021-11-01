@@ -3,5 +3,5 @@
  */
 export interface UpdateBookRequest {
   title: string
-  read: boolean
+  isRead: boolean
 }

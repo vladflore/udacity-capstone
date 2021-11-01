@@ -13,7 +13,7 @@ export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEven
             'Access-Control-Allow-Origin': '*'
         },
         body: JSON.stringify({
-            items: await booksService.findAll(getUserId(event))
+            books: await booksService.findAll(getUserId(event))
         })
     }
 }

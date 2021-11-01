@@ -8,7 +8,7 @@
     }
   },
   "required": [
-    "name"
+    "title"
   ],
   "additionalProperties": false
 }

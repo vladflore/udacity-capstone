@@ -31,10 +31,10 @@ export class BooksCloudManager {
         userId: userId,
         bookId: bookId
       },
-      UpdateExpression: 'set #theTitle = :t, read = :r',
+      UpdateExpression: 'set #theTitle = :t, isRead = :r',
       ExpressionAttributeValues: {
         ':t': updateBookData.title,
-        ':r': updateBookData.read
+        ':r': updateBookData.isRead
       },
       ExpressionAttributeNames: {
         '#theTitle': 'title'

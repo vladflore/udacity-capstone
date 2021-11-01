@@ -24,14 +24,13 @@ things to implement:
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 https://manage.auth0.com/dashboard/us/dev-t30egl7m/applications
+https://manage.auth0.com/dashboard/us/dev-t30egl7m/apis/616de502d6e1bb0285dd9e56/test
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-endpoints:
-  GET - https://ljbxg1td6b.execute-api.eu-central-1.amazonaws.com/dev/books
-  POST - https://ljbxg1td6b.execute-api.eu-central-1.amazonaws.com/dev/books
-  PATCH - https://ljbxg1td6b.execute-api.eu-central-1.amazonaws.com/dev/books/{bookId}
-  DELETE - https://ljbxg1td6b.execute-api.eu-central-1.amazonaws.com/dev/books/{bookId}
-  POST - https://ljbxg1td6b.execute-api.eu-central-1.amazonaws.com/dev/books/{bookId}/attachment
-
 JSON Web Key Set: https://dev-t30egl7m.us.auth0.com/.well-known/jwks.json
+
+curl --request POST \
+  --url https://dev-t30egl7m.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '{"client_id":"1evc7JS3wNIVK7zcgsRcUQhShj075tp9","client_secret":"TQInf7zSrmYaJ6v3uID1ZY_q2AZJZ430-Ix1-9-ngT-JkrABZfb_LTB2PHtI9uZB","audience":"https://dev-t30egl7m.us.auth0.com/api/v2/","grant_type":"client_credentials"}'

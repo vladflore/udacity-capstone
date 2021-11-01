@@ -15,7 +15,7 @@ export class BooksService {
       bookId: uuid.v4(),
       addedAt: new Date().toISOString(),
       ...newBookData,
-      read: false
+      isRead: false
     }
     await booksCloudManager.saveBook(newBook)
     logger.info(`User ${userId} added a new book with id: ${newBook.bookId}.`)
