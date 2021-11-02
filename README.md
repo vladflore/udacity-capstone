@@ -14,7 +14,7 @@ track of the books a user has, together with which of them the user has already 
 ### How it works
 
 The backend is already running on AWS. To interact with it a Postman
-collection(`UdacityCapstoneProject.postman_collection.json`) of requests has been provided.
+collection(`submission/UdacityCapstoneProject.postman_collection.json`) of requests has been provided.
 
 The Web API can be accessed over the following link:
 
@@ -52,7 +52,7 @@ The access token can be found in the response of the POST request from above:
 This access token has to be used for all the other requests.
 
 The Postman collection contains the following variables, which can be set by importing the Postman `dev`
-environment(`dev.postman_environment.json`):
+environment(`submission/dev.postman_environment.json`):
 
 * `authToken`: the access token from above
 * `apiId`: the ID of the Web API as deployed on AWS
@@ -69,3 +69,5 @@ PATCH - https://<apiId>.execute-api.eu-central-1.amazonaws.com/dev/books/{bookId
 DELETE - https://<apiId>.execute-api.eu-central-1.amazonaws.com/dev/books/{bookId}
 POST - https://<apiId>.execute-api.eu-central-1.amazonaws.com/dev/books/{bookId}/attachment
 ```
+
+The `submission/sls-deploy.gif` shows the current successful deployment.
