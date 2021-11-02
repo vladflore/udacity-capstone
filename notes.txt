@@ -24,15 +24,3 @@ things to implement:
 [X] when deleting a book, delete the S3 object attached to it too
 [X] enable auth for all the requests
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-https://manage.auth0.com/dashboard/us/dev-t30egl7m/applications
-https://manage.auth0.com/dashboard/us/dev-t30egl7m/apis/616de502d6e1bb0285dd9e56/test
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-JSON Web Key Set: https://dev-t30egl7m.us.auth0.com/.well-known/jwks.json
-
-curl --request POST \
-  --url https://dev-t30egl7m.us.auth0.com/oauth/token \
-  --header 'content-type: application/json' \
-  --data '{"client_id":"1evc7JS3wNIVK7zcgsRcUQhShj075tp9","client_secret":"TQInf7zSrmYaJ6v3uID1ZY_q2AZJZ430-Ix1-9-ngT-JkrABZfb_LTB2PHtI9uZB","audience":"https://dev-t30egl7m.us.auth0.com/api/v2/","grant_type":"client_credentials"}'
